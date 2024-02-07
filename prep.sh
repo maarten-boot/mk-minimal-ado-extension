@@ -95,14 +95,14 @@ init_new_task()
     "friendlyName": "${FriendlyName}",
     "description": "${Description}",
     "helpMarkDown": "${Name}",
-    "category": "Utility",
+    "category": "Azure Pipelines",
     "author": "${Author}",
     "version": {
         "Major": 0,
         "Minor": 1,
         "Patch": 0
     },
-    "instanceNameFormat": "${Name}",
+    "instanceNameFormat": "$(echo ${Name} | sed -e 's/-/ /g')",
     "inputs": [
         {
             "name": "samplestring",

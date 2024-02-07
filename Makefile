@@ -14,5 +14,5 @@ $(DIR):
 	./prep.sh 2>&1 | tee out
 
 real-clean:
-	rm -f out *.vsix README.md  vss-extension.json
+	rm -f out *.vsix overview.md  vss-extension.json
 	rm -rf $(DIR) images
